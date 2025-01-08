@@ -10,7 +10,7 @@ const WeatherDetails = ({ data }: WetherDetailsProps) => {
 
     const { wind, main, sys } = data;
 
-    console.log('data -- ', data);
+    // console.log('data -- ', data);
 
     const getWindDirection = (degree: number) => {
         const directions = ["N", "NE", "E", "SE", "S", "SW", "W", "NW"];

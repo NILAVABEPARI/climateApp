@@ -13,12 +13,12 @@ import FavoriteCities from "@/components/favorite-cities";
 const WeatherDashboard = () => {
     const { coordinates, error: locationError, getLocation, isLoading: locationLoading } = useGeoLocation();
 
-    console.log('coordinates -- ', coordinates, locationError, locationLoading);
+    // console.log('coordinates -- ', coordinates, locationError, locationLoading);
 
     const weatherQuery = useWeatherQuery(coordinates);
     const forecastQuery = useForecastQuery(coordinates);
     const locationQuery = useReverseGeocodeQuery(coordinates);
-    console.log('locationQuery -- ', locationQuery, " || weatherQuery -- ", weatherQuery, " || forecastQuery -- ", forecastQuery);
+    // console.log('locationQuery -- ', locationQuery, " || weatherQuery -- ", weatherQuery, " || forecastQuery -- ", forecastQuery);
 
     const handleRefresh = () => {
         getLocation();

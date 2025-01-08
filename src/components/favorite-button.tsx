@@ -9,7 +9,7 @@ interface FavoriteButtonProps {
 }
 
 const FavoriteButton = ({ data }: FavoriteButtonProps) => {
-    console.log('data inside favoriteButton-- ', data);
+    // console.log('data inside favoriteButton-- ', data);
     const { addToFavorite, isFavorite, removeFavorite } = useFavorite();
 
     const isCurrentlyFavorite = isFavorite(data.coord.lat, data.coord.lon);
