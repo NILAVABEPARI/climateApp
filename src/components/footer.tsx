@@ -1,6 +1,3 @@
-// import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"; // Import FontAwesomeIcon for social media icons
-// import { faLinkedin, faGithub } from "@fortawesome/free-brands-svg-icons"; // Import specific brand icons
-
 import { Github, Linkedin } from "lucide-react";
 
 const Footer = () => {
